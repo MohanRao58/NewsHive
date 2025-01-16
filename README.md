@@ -77,7 +77,7 @@ To configure the app, pass the following props to the News component:
 ![image alt](https://github.com/MohanRao58/NewsHive/blob/806cd09f6d0b347fbfb67230847219cbb41ec611/Configure.PNG)
 
 ## Folder Structure
-![image alt](https://github.com/MohanRao58/NewsHive/blob/3240298471cd0785800020eb03ca53f833c09427/screenshot.PNG)
+![image alt](https://github.com/MohanRao58/NewsHive/blob/552cdd789a72dc430e3173860f7ffc197eabfd56/FolderStructure.PNG)
 
 ## Screenshots
 ![image alt](https://github.com/MohanRao58/NewsHive/blob/806cd09f6d0b347fbfb67230847219cbb41ec611/screenshot.PNG)
