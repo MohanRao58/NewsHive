@@ -77,16 +77,7 @@ To configure the app, pass the following props to the News component:
 ![image alt](https://github.com/MohanRao58/NewsHive/blob/806cd09f6d0b347fbfb67230847219cbb41ec611/Configure.PNG)
 
 ## Folder Structure
-src
-├── components
-│   ├── NavBar.js
-│   ├── News.js
-│   ├── NewsItem.js
-│   ├── Spinner.js
-├── App.js
-├── index.js
-├── App.css
-└── index.css
+![image alt](https://github.com/MohanRao58/NewsHive/blob/3240298471cd0785800020eb03ca53f833c09427/screenshot.PNG)
 
 ## Screenshots
 ![image alt](https://github.com/MohanRao58/NewsHive/blob/806cd09f6d0b347fbfb67230847219cbb41ec611/screenshot.PNG)
