@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# NewsHive 📰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**NewsHive** is a React-based web application that provides users with the latest news across various categories like Business, Entertainment, Sports, Technology, and more. It uses the News API to fetch and display top headlines with an infinite scrolling feature.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Infinite Scroll:** Load news articles as you scroll without refreshing the page.
+- **Category Filtering:** Navigate through various news categories using a responsive navigation bar.
+- **Dynamic Titles:** Page titles dynamically update based on the selected category.
+- **User-Friendly Design:** Simple and elegant UI with Bootstrap integration.
+- **Real-Time Updates:** Fetch news dynamically using the News API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components Overview
 
-### `npm test`
+### 1. **NavBar.js**
+- Renders the navigation bar with links to various news categories.
+- Uses `react-router-dom` for seamless navigation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. **News.js**
+- Fetches and displays news articles from the News API.
+- Implements infinite scrolling using `react-infinite-scroll-component`.
+- Dynamically updates the page title based on the category.
+- Supports props for country, category, and page size.
 
-### `npm run build`
+### 3. **NewsItem.js**
+- Renders individual news articles with the following details:
+  - Title
+  - Description
+  - Source badge
+  - Author
+  - Published date
+  - Link to the full article
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4. **Spinner.js**
+- Displays a loading spinner while news articles are being fetched.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+- **Frontend:**
+  - React
+  - React Router DOM
+  - Bootstrap
+- **API:**
+  - [News API](https://newsapi.org/)
+- **Additional Libraries:**
+  - PropTypes for type checking.
+  - `react-infinite-scroll-component` for infinite scrolling functionality.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mohanrao58/newshive.git
+   cd newshive
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
+npm install
 
-## Learn More
+3. Obtain an API key from News API and add it to your environment.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Run the development server:
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Open the app in your browser:
+http://localhost:3000
 
-### Code Splitting
+## Configuration
+To configure the app, pass the following props to the News component:
+![image alt](https://github.com/MohanRao58/NewsHive/blob/806cd09f6d0b347fbfb67230847219cbb41ec611/Configure.PNG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Folder Structure
+src
+├── components
+│   ├── NavBar.js
+│   ├── News.js
+│   ├── NewsItem.js
+│   ├── Spinner.js
+├── App.js
+├── index.js
+├── App.css
+└── index.css
 
-### Analyzing the Bundle Size
+## Screenshots
+![image alt](https://github.com/MohanRao58/NewsHive/blob/806cd09f6d0b347fbfb67230847219cbb41ec611/screenshot.PNG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## How to Use
+1. Navigate through the categories using the navigation bar.
+2. Scroll down to load more news articles.
+3. Click on "Read More" to view the full article in a new tab.
